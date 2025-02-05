@@ -36,6 +36,10 @@ This is crucial due to the significant increase in claims, such as those related
 ### **Case Study**  
 We are using a French **motor third-party liability (MTPL)** insurance dataset to predict claim severity.
 
+**[The project is visible in a Jupyther Notebook in the repository here](Code.ipynb)**
+
+**[The initial version of the python code on which I worked on is available here](Insurance_project.py)**
+
 ---
 
 ## **Project Content** 🛠️  
@@ -45,12 +49,6 @@ The project includes:
 - 🧮 **Selection of relevant** risk variables  
 - 🤖 **Training** and **testing** of ML regression models  
 
----
-
-## **Additional Resources** 📚  
-
-- **Swiss Association of Actuaries:** [Case Studies Page](https://www.actuarialdatascience.org/ADS-Tutorials/)  
-- **Kaggle Dataset:** [French Motor TPL Insurance Claims](https://www.kaggle.com/datasets/karansarpal/fremtpl-french-motor-tpl-insurance-claims)
 
 ---
 
@@ -71,6 +69,13 @@ The datasets **freMTPLfreq** and **freMTPLsev** contain risk characteristics for
 - 📈 **Poisson Regression (GLM)**  
 - 🔀 **Tweedie Regression**  
 - 🚀 **XGBoost Regression**
+
+---
+
+## **Additional Resources** 📚  
+
+- **Swiss Association of Actuaries:** [Case Studies Page](https://www.actuarialdatascience.org/ADS-Tutorials/)  
+- **Kaggle Dataset:** [French Motor TPL Insurance Claims](https://www.kaggle.com/datasets/karansarpal/fremtpl-french-motor-tpl-insurance-claims)
 
 ---
 
