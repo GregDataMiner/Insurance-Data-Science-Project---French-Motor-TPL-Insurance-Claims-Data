@@ -4,8 +4,8 @@ import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt # graphs/plotting
 
-MTPL_filepath1 = "C:/Users/grego/Documents/USPN M2/REASSURANCE/Projet/freMTPLfreq.xlsx"
-MTPL_filepath2 = "C:/Users/grego/Documents/USPN M2/REASSURANCE/Projet/freMTPLsev.xlsx"
+MTPL_filepath1 = ".../freMTPLfreq.xlsx"
+MTPL_filepath2 = ".../freMTPLsev.xlsx"
 
 print("Now loading MTPLfreq.")
 MTPLfreq = pd.read_excel(MTPL_filepath1)
