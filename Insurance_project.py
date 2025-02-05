@@ -267,7 +267,7 @@ from sklearn.linear_model import Lasso
 from sklearn.feature_selection import SelectFromModel
 
 # Establish the Lasso (L1) Regularisation model that will perform feature selection.
-lasso = Lasso(alpha=5e-5, random_state=1).fit(X_train_scale, y_train)
+lasso = Lasso(alpha=1e-4, random_state=1).fit(X_train_scale, y_train)
 model = SelectFromModel(lasso, prefit=True)
 
 X_train_l1 = model.transform(X_train_scale)
@@ -279,8 +279,12 @@ selected_features = pd.DataFrame(model.inverse_transform(X_train_l1),
 print(selected_features)
 selected_columns = selected_features.columns[selected_features.var() != 0]
 print(selected_columns)
+# retaraitement des colones prime 'Brand_Volkswagen Audi, Skoda or Seat'
+
+
 X_train_L1reg = selected_features.drop(selected_features.columns[selected_features.var() == 0], axis=1)
 
+print(X_train_L1reg.columns)
 print(X_train_L1reg)
 # The X_valid dataframe is truncated such that only the L1-selected features are used for validation purposes.
 X_valid_L1reg = X_valid_scale[selected_columns]
@@ -453,7 +457,7 @@ print(XGB_n_estimators_best)
 
 
 """
-Step 11: Train (fit) the models to the entire training dataset¶
+Step 11: Train (fit) the models to the entire training dataset
 """
 # Define the optimised regression models that will be used.
 
